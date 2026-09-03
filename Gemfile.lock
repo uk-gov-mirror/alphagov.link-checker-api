@@ -241,7 +241,6 @@ GEM
       mime-types-data (~> 3.2025, >= 3.2025.0507)
     mime-types-data (3.2026.0701)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.9)
     minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
@@ -263,9 +262,6 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.7.5)
-    nokogiri (1.19.4)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.19.4-aarch64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.19.4-arm64-darwin)
@@ -477,6 +473,12 @@ GEM
       thor (>= 0.20, < 2.0)
       webrick (~> 1.8)
       zeitwerk (~> 2.3)
+    pact-ffi (0.4.28.0-aarch64-linux)
+      ffi (~> 1.15)
+    pact-ffi (0.4.28.0-arm64-darwin)
+      ffi (~> 1.15)
+    pact-ffi (0.4.28.0-x86_64-linux)
+      ffi (~> 1.15)
     pact-mock_service (3.12.4)
       find_a_port (~> 1.0.1)
       json
@@ -744,7 +746,6 @@ GEM
 PLATFORMS
   aarch64-linux
   arm64-darwin
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -764,6 +765,7 @@ DEPENDENCIES
   govuk_sidekiq
   listen
   pact (~> 1.67)
+  pact-ffi (~> 0.4.28)
   pact_broker-client
   pg
   plek
